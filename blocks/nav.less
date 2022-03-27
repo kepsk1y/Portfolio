@@ -39,10 +39,20 @@
 
     }
 
+    // Modificators
+
     &--btn{
         padding: 10px 30px;
         border: 2px solid @black;
         border-radius: 20px;
+
+        transition: background .2s linear, color .2s linear, box-shadow .2s linear;
+
+        &:hover{
+            background-color: @black;
+            color: @white;
+            box-shadow: 2px 2px 10px fade(@black, 24%);
+        }
     }
 }
 
