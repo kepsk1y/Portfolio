@@ -1,0 +1,39 @@
+.work{
+    overflow: hidden;
+    box-shadow: 0 0 4px fade(@black, 25%);
+    border-radius: 10px;
+    margin-bottom: 30px;
+
+    transition: box-shadow .2s linear;
+
+    &:hover{
+        box-shadow: 0 0 27px fade(@black, 25%);
+    }
+}
+
+.work__image{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.work__content{
+    padding: 16px 12px;
+}
+
+.work__cat{
+    font-size: 12px;
+    color: @black;
+    text-transform: uppercase;
+
+    margin-bottom: 8px;
+}
+
+.work__title{
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    color: @black;
+    font-weight: 700;
+    text-transform: uppercase;
+}
