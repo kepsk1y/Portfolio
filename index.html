@@ -91,7 +91,6 @@
       
       </div>
    </section>
-   
 
    <!-- Works -->
    <div class="works">
@@ -269,9 +268,6 @@
       </div>
    </section>
 
-      <!-- Reviews -->
-      
-
    <!-- News -->
    <section class="news">
       <div class="container">
@@ -395,8 +391,8 @@
       </div>
    </footer>
 
-   <!-- Modals -->
-   <div class="modal" style="display: none">
+   <!-- Modal - 1-->
+   <div class="modal" style="display:none;">
       <div class="modal__dialog">
 
          <button class="modal__close" type="button">
@@ -438,7 +434,8 @@
       </div> <!-- Modal dialog -->
    </div>   <!-- Modal -->
    
-   <div class="modal">
+   <!-- Modal - 2 -->
+   <div class="modal" style="display:none;">
       <div class="modal__dialog">
 
          <button class="modal__close" type="button">
@@ -446,7 +443,7 @@
          </button>
 
          <div class="modal__content">
-            <h3 class="modal__title">resume</h3>
+            <h3 class="modal__title text-center">resume</h3>
          
             <div class="text-center">
                <a class="btn btn--thin" href="#">download pdf</a>
@@ -607,6 +604,57 @@
 
       </div> <!-- Modal dialog -->
    </div>   <!-- Modal -->
+
+   <!-- Modal - 3 -->
+   <div class="modal" style="display:none;">
+      <div class="modal__dialog modal__dialog--sm">
+
+         <button class="modal__close" type="button">
+            <img src="images/exit.svg" alt="Close">
+         </button>
+
+         
+         <div class="contact">
+               
+            <div class="contact__left">
+                <h3 class="modal__title mb-0">let's talk</h3>
+               <div class="modal__suptitle">call me or send me a request</div>
+               
+               <ul class="contact__info">
+                  <li class="contact__info-item">
+                     <img class="contact__item-ico" src="images/phone.svg" height="14px" alt="Phone">
+                     (200) 100 3000
+                  </li>
+                  <li class="contact__info-item">
+                     <img class="contact__item-ico" src="images/mail.svg" height="14px" alt="Mail">
+                     kepsk1y@gmail.com
+                  </li>
+               </ul>
+            
+               <form class="form" action="/" method="post">
+                  <div class="form__group">
+                     <label class="label" for="input-email">Adress e-mail</label>
+                     <input class="input" type="text" id="input-email" placeholder="Adress e-mail">
+                  </div>
+               </form>
+
+               <form class="form" action="/" method="post">
+                  <div class="form__group">
+                     <label class="label" for="input-email">Request</label>
+                     <textarea class="textarea" id="input-email" placeholder="Type your request..."></textarea>
+                  </div>
+               
+                  <div class="text-right">
+                     <button class="btn" type="submit">send</button>
+                  </div>
+               </form>
+            </div> <!-- contact__left -->     
+         </div> <!-- contact -->
+      </div> <!-- Modal dialog -->
+   </div>   <!-- Modal -->
+
+
+   
    
    
    
