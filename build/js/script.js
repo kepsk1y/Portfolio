@@ -1,0 +1,1 @@
+$(function(){let t=$("[data-filter]");t.on("click",function(t){t.preventDefault();let a=$(this).data("filter");"all"==a?$("[data-cat]").removeClass("hide"):$("[data-cat]").each(function(){$(this).data("cat")!=a?$(this).addClass("hide"):$(this).removeClass("hide")})})});
