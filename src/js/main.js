@@ -1,5 +1,31 @@
 $(function() {
+    // Slider https://kenwheeler.github.io/slick/
+
+    $('[data-slider="slick"]').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        fade: true,
+        arrows: false,
+        dots: true
+      });
+
+    $('.modal-work__btn--next').on('click', function(event) {
+        event.preventDefault();
+        
+        let currentSlider = $(this).parents('.modal').find('[data-slider="slick"]');
+        
+        currentSlider.slick('slickNext');
+    });
     
+    $('.modal-work__btn--prev').on('click', function(event) {
+        event.preventDefault();
+        
+        let currentSlider = $(this).parents('.modal').find('[data-slider="slick"]');
+
+        currentSlider.slick('slickPrev');
+    });
+
     // Modal
     let modalCall = $("[data-modal]");
     let modalClose = $("[data-close]")
@@ -18,6 +44,8 @@ $(function() {
                 transform: "rotateX(0)"
             });
         }, 200);
+
+        $('#worksSlider').slick('setPosition'); 
       }); 
     
      modalClose.on("click", function(event) {
@@ -81,8 +109,10 @@ $(function() {
             });
         }
 
+    
 
 
+    
 
 
 

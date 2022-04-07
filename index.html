@@ -8,8 +8,10 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">   
+   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
    <title>Portfolio</title>
 </head>
+
 <body>
    
    <!-- Header -->
@@ -400,9 +402,17 @@
          </button>
 
          <div class="modal-work">
-            <div class="modal-work__preview">
-               <img class="modal-work__photo" src="https://via.placeholder.com/790x780" alt="">
-            </div>
+               <div class="modal-work__preview">
+                  <div data-slider="slick">
+                     <div>
+                        <img class="modal-work__photo" src="https://via.placeholder.com/790x780" alt="">
+                     </div>
+                     <div>
+                        <img class="modal-work__photo" src="https://via.placeholder.com/790x780/333" alt="">
+                     </div>
+                  </div>
+               </div>
+            
             
             <div class="modal-work__content">
                <div class="modal-work__header">
@@ -655,6 +665,7 @@
 
    <!-- JS -->
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>   
+   <script src="vendors/slick.min.js"></script>
    <script src="src/js/main.js"></script>
 </body>
 </html>
