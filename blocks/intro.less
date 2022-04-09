@@ -12,6 +12,16 @@
     padding-bottom: 123px;
 
     position: relative;
+
+    @media @tablet{
+        padding-top: 45px;
+        padding-bottom: 45px;
+        background-size: 415px auto;
+    }
+    
+    @media @mobile{
+        background-size: 315px auto;
+    }
     
 }
 
@@ -19,6 +29,10 @@
     font-size: 32px;
     font-weight: 200;
     color: @black;
+
+    @media @tablet{
+        font-size: 20px;
+    }
 }
 
 .intro__title{
@@ -27,6 +41,10 @@
     font-size: 45px;
     color: @black;
     font-weight: 700;
+
+    @media @tablet{
+        font-size: 30px;
+    }
 }
 
 .intro__text{
@@ -39,6 +57,14 @@
 
 .intro__content{
     width: 50%;
+
+    @media @mobile{
+        width: 60%;
+    }
+
+    @media @mobile-sm{
+       width: 100%;
+    }
 }
 
 .intro__photo{
@@ -46,5 +72,18 @@
     bottom: -1px;
     right: 0;
     z-index: 1;
+
+    @media @tablet{
+        width: 350px;
+
+    }
+
+    @media @mobile{
+        width: 300px;
+    }
+
+    @media @mobile-sm{
+        display: none;
+    }
 }
 

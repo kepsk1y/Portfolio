@@ -1,4 +1,16 @@
 $(function() {
+    // Burger
+
+    const navToggle = $("#navToggle");
+    const nav = $("#nav");
+
+    navToggle.on('click', function(event) {
+        event.preventDefault();
+
+        nav.toggleClass("show");
+
+    });
+    
     // Slider https://kenwheeler.github.io/slick/
 
     $('[data-slider="slick"]').slick({
