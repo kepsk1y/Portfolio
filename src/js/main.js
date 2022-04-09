@@ -1,4 +1,19 @@
 $(function() {
+    // Smooth scroll
+    $("[data-scroll]").on("click", function(event) {
+
+        event.preventDefault();
+
+        let elementID = $(this).data('scroll');
+        let elementOffset = $(elementID).offset().top;
+
+        $("html, body").animate({
+            scrollTop: elementOffset - 55
+        }, 800);
+
+            
+    });
+    
     // Burger
 
     const navToggle = $("#navToggle");
