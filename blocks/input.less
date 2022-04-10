@@ -1,0 +1,28 @@
+.input{
+    display: block;
+    width: 100%;
+
+    width: 360px;
+    height: 54px;
+
+    padding: 20px 21px;
+    color: @black;
+
+    font-family: inherit;
+    font-size: 12px;
+
+    border: 1px solid fade(#707070, 30%);
+    border-radius: 27px;
+
+    transition: border-color .2s linear;
+
+    @media @tablet{
+        width: 100%;
+    }
+
+    &:focus{
+        outline: 0;
+
+        border-color: @black;
+    }
+}

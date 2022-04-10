@@ -1,0 +1,154 @@
+.modal-work{
+    display: flex;
+    flex-wrap: wrap;
+
+    @media @mobile{
+        padding: 10px;
+    }
+}
+
+.modal-work__preview{
+    width: 65.5%;
+    position: relative;
+    overflow: hidden;
+
+    @media @notebook{
+        width: 45%;
+    }
+
+    @media @mobile{
+        width: 100%;
+        height: 600px;
+    }
+
+    @media @mobile-sm{
+        display: none;
+    }
+}
+
+
+.modal-work__photo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.modal-work__content{
+    width: 34.5%;
+
+    padding: 50px 100px 15px 26px;
+
+    position: relative;
+
+    @media @notebook{
+        width: 55%;
+        padding: 20px;
+    }
+
+    @media @tablet{
+        padding: 20px;
+    }
+
+    @media @mobile{
+        width: 100%;
+    }
+}
+
+.modal-work__header{
+    margin-bottom: 33px;
+}
+
+.modal-work__title{
+    font-size: 32px;
+    color: @black;
+    font-weight: 700;
+
+    margin-bottom: 3px;
+
+    text-transform: uppercase;
+
+    @media @notebook{
+        font-size: 25px;
+    }
+}
+
+.modal-work__info{
+    font-size: 18px;
+    color: @gray;
+
+    text-transform: uppercase;
+}
+
+.modal-work__client{
+
+}
+
+.modal-work__client-title{
+    font-size: 16px;
+    color: @black;
+    font-weight: 700;
+
+    margin-bottom: 2px;
+}
+
+.modal-work__client-company{
+    font-size: 14px;
+    color: @gray;
+    font-style: italic;
+
+    margin-bottom: 33px;
+
+    @media @notebook{
+        margin-bottom: 20px;
+    }
+
+}
+
+.modal-work__info-divider{
+    margin: 0 14px;
+}
+
+.modal-work__text{
+    font-size: 12px;
+    color: @gray;
+    font-weight: 300;
+    line-height: 24px;
+
+    margin-bottom: 130px;
+
+    @media @mobile-sm{
+        text-align: center;
+    }
+}
+
+.modal-work__footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0 27px 15px;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.modal-work__btn{
+    font-size: 14px;
+    color: @black;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    font-family: inherit;
+    background: none;
+    border: none;
+    padding: 0;
+
+    @media @mobile-sm{
+        display: none;
+    }
+}
